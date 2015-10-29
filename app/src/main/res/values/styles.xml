@@ -1,0 +1,27 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <declare-styleable name="LabledImageView">
+        <attr name="text_gravity">
+            <enum name="left" value="1"></enum>
+            <enum name="top" value="2"></enum>
+            <enum name="right" value="3"></enum>
+            <enum name="bottom" value="4"></enum>
+        </attr>
+        <attr name="centerInHorizontal" format="boolean"></attr>
+        <attr name="centerInVertical" format="boolean"></attr>
+        <attr name="centerInAll" format="boolean"></attr>
+        <attr name="text_margin" format="reference|dimension"></attr>
+        <attr name="text_padding" format="reference|dimension"></attr>
+        <attr name="text_size" format="reference|dimension"></attr>
+        <attr name="text_color" format="reference|color"></attr>
+    </declare-styleable>
+
+</resources>
