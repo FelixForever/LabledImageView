@@ -9,19 +9,35 @@
     </style>
 
     <declare-styleable name="LabledImageView">
-        <attr name="text_gravity">
-            <enum name="left" value="1"></enum>
-            <enum name="top" value="2"></enum>
-            <enum name="right" value="3"></enum>
-            <enum name="bottom" value="4"></enum>
-        </attr>
-        <attr name="centerInHorizontal" format="boolean"></attr>
-        <attr name="centerInVertical" format="boolean"></attr>
-        <attr name="centerInAll" format="boolean"></attr>
-        <attr name="text_margin" format="reference|dimension"></attr>
-        <attr name="text_padding" format="reference|dimension"></attr>
+        <attr name="text" format="reference|string"></attr>
         <attr name="text_size" format="reference|dimension"></attr>
         <attr name="text_color" format="reference|color"></attr>
+        <attr name="text_maxlength" format="reference|dimension"></attr>
+        <attr name="text_singleline" format="boolean"></attr>
+        <attr name="text_margin" format="reference|dimension"></attr>
+
+        <attr name="text_padding" format="reference|dimension"></attr>
+        <attr name="text_padding_left" format="reference|dimension"></attr>
+        <attr name="text_padding_top" format="reference|dimension"></attr>
+        <attr name="text_padding_right" format="reference|dimension"></attr>
+        <attr name="text_padding_bottom" format="reference|dimension"></attr>
+
+        <attr name="text_direction">
+            <enum name="left" value="0"></enum>
+            <enum name="top" value="1"></enum>
+            <enum name="right" value="2"></enum>
+            <enum name="bottom" value="3"></enum>
+        </attr>
+        <attr name="text_gravity">
+            <enum name="start" value="0"/>
+            <enum name="center" value="1"/>
+            <enum name="end" value="2"/>
+        </attr>
+        <attr name="image_gravity">
+            <enum name="start" value="0"/>
+            <enum name="center" value="1"/>
+            <enum name="end" value="2"/>
+        </attr>
     </declare-styleable>
 
 </resources>
